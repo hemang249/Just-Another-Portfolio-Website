@@ -1,259 +1,264 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto Slab', sans-serif;
-    scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	font-family: 'Public Sans', sans-serif;
+	scroll-behavior: smooth;
 }
+
+/* Navbar Start*/
 
 header {
-    width: 100%;
-    height: 100vh;
-    background-color: #263238;
-    color: white;
+	width: 100%;
+	height: 10vh;
+	background-color: #1564bf;
 }
 
+.navbar-el {
+	float: right;
+
+	font-size: 2.5vh;
+	margin-top: 3vh;
+	margin-right: 3%;
+	
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.navbar-link {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.navbar-name {
+	float: left;
+	list-style-type: none;
+	
+
+	font-size: 2.5vh;
+	margin-top: 3vh;
+	margin-left: 3%;
+
+}
+
+.fixed {
+	position: fixed;
+}
+
+/* Navbar End */
+
+/* Intro Section Start */
 .intro {
-    padding-top: 20%;
-    
+	width: 100%;
+	height: 100vh;
+
+	animation-name: fadeIn;
+	animation-duration: 2s;
 }
 
-.intro-heading {
-    text-align: center;
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    font-size: 2.4rem;
+.intro-img {
+	margin-top: 5%;
+	margin-left: 42.5%;
+
+	width: 15vw;
+	height: 15vw;
+	border-radius: 50%;
 }
 
-.intro-heading--name {
-    color: #ff9800;
+.intro-heading-primary {
+	margin-top: 5%;
+	text-align: center;
+}
 
+.intro-heading-secondary {
+	font-size: 1.2rem;
+	font-weight: 500;
+	margin-top: 3%;
+	text-align: center;
 }
 
 .btn-transparent {
-    margin-left: 35%;
-    width: 30%;
-    margin-right: 30%;
-    margin-top: 5%;
-    height: 7vh;
-    color: white;
-    border: 2px solid white;
-    background-color: rgba(0, 0, 0, 0);
+	width: 15%;
+	height: 7vh;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid black;
+	margin-left: 42.5%;
+	margin-top: 5%;
 }
 
 .btn-transparent:hover {
-    color: black;
-    background-color: #81d4fa;
+	background-color: #1564bf;
+	color: white;
 }
 
-.about {
-    width: 100%;
-    height: 100vh;
-    margin-top: 5%;
+/* Intro Section End */
 
+/* About Section Start */
+.about {
+	height: 50vh;
+	width: 100%;
 }
 
 .about-heading {
-    font-size: 2.4rem;
-    text-align: center;
+	margin-top: 3%;
+	text-align: center;
 }
 
 .about-flex-container {
-    display: grid;
-    grid-gap: 5%;
-    grid-template-columns: 1fr 1fr;
-}
+	display: flex;
+	flex-direction: row;
 
-.about-desc {
-
-    margin-top: 5%;
-}
-
-.about-img {
-    width: 20vw;
-    height: 20vw;
-    margin-left: 15vw;
-}
-
-.about-heading-secondary {
-    text-align: center;
-    margin-top: 3%;
-    font-size: 1.2rem;
 }
 
 .about-description {
-    text-align: center;
-    margin-top: 5%;
-    margin-left: 5vw ;
-    
+	width: 42.5%;
+	margin-top: 5%;
+	margin-right: 2.5%;
+	margin-left: 5%
 }
 
 .about-skills {
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
+	width: 42.5%;
+	margin-top: 5%;
+	margin-right: 5%;
+	margin-left: 2.5%;
 }
 
-.skill{
-    
-    width: 90%;
-    height: 5vh;
-    background-color: #eceff1;
+.skill {
+	width: 100%;
+	height: 5vh;
+	background-color: #eceff1;
+	border-radius: 15px;
 }
 
 .skill:not(:first-child) {
-    margin-top: 5%;
+	margin-top: 5%;
 }
 
-.skill-85 {
-    width: 85%;
-    height: 5vh;
-    background-color:#81d4fa ;
-    padding-left: 10px;
-}
-
-.skill-75 {
-    width: 75%;
-    height: 5vh;
-    background-color:#81d4fa ;
-    padding-left: 10px;
-}
-
-.skill-50 {
-    width: 50%;
-    height: 5vh;
-    background-color:#81d4fa ;
-    padding-left: 10px;
+.skill-80 {
+	width: 80%;
+	height: 5vh;
+	border-radius: 15px;
+	background-image: linear-gradient(to right , #1de9b6 , #76ff03);
+	padding-left: 15px;
+	
 }
 
 .skill-90 {
-    padding-left: 10px;
-    width: 90%;
-    height: 5vh;
-    background-color:#81d4fa ;
+	width: 80%;
+	height: 5vh;
+	border-radius: 15px;
+	background-image: linear-gradient(to right , #ff4081 , #ffff00);
+	padding-left: 15px;
+}
+
+.skill-70 {
+	width: 70%;
+	height: 5vh;
+	border-radius: 15px;
+	background-image: linear-gradient(to right , #3d5afe , #00e5ff);
+	padding-left: 15px;
+	
+}
+
+.skill-85 {
+	width: 85%;
+	height: 5vh;
+	border-radius: 15px;
+	background-image: linear-gradient(to right , #ffea00 , #76ff03);
+	padding-left: 15px;
+
+}
+/* About Section End */
+
+/* Projects Section Start */
+.projects {
+	margin-top: 5%;
+	width: 100%;
+	height: 60vh;
 }
 
 .projects-heading {
-    text-align: center;
+	text-align: center;
 }
 
-.projects-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-right: 5%;
+.projects-list {
+	display: flex;
+	flex-direction: row;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 5%;
 }
 
 .project {
-    width: 25vw;
-    height: 25vw;
+	width: 25%;
+	height: 25%;
+	background-color: grey;
 }
 
-footer {
-    width: 100%;
-    height: 30vh;
-    
-    background-color: #263238;
-}
-
-.footer-heading {
-    color: white;
-    text-align: center;
-}
-
-.footer-social {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.footer-rights {
-    margin-top: 3%;
-    color: white;
-    text-align: center;
-}
-
-i {
-    margin-top: 2%;
-}
-
-i:not(:first-child) {
-    margin-left: 3%;
-}
-
+/* Contact Section Start */
 .contact {
-    margin-top: 5%;
-    height: 60vh;
-    background-color: #f2f2f2;
+	max-width: 100%;
+	height: 15vh;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: #eceff1;
+	border-radius: 10px;
 }
 
 .contact-heading {
-    text-align: center;
+	color: white;
+	text-align: center;
+} 
+
+.contacts {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 3%;
+	color: white;
 }
 
- /* Style inputs with type="text", select elements and textareas */
- input[type=text] {
-    
-    width: 50%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: #4CAF50;
-    width: 50%;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .form {
-    margin-left: 35%;
-    margin-top: 5%;
-    border-radius: 5px;
-    padding: 20px;
-  } 
+.contact-el:not(:first-child) {
+	margin-left: 15%;
+}
 
+/* Contact Section End */
 
+footer {
+	width: 100%;
+	height: 40vh;
+	background-color: #263238;
+	margin-top: 5%;
+	padding-top: 1%;	
+}
 
+.footer-heading {
+	color: white;
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+.social {
+	margin-top: 5%;
+}
+
+.social-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 3%;
+}
+
+i:not(:first-child) {
+	margin-left: 5%;
+}
 @keyframes fadeIn {
-    0% {
-        
-        opacity: 0;
-    }
-
-    25% {
-        
-        opacity: 0.15;
-    }
-
-    50% {
-        
-        opacity: 0.25;
-    }
-    75% {
-      
-        opacity: 0.75;
-    }
-    100% {
-        
-        opacity: 1;
-    }
-
+	0% {opacity: 0;}
+	75% {opacity: 0.75;}
+	100% {opacity: 1;}
 }
-
